@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario con Fondo</title>
+  <style>
+    body {
+      background-image: url('https://static.vecteezy.com/system/resources/previews/017/047/854/non_2x/cute-cat-illustration-cat-kawaii-chibi-drawing-style-cat-cartoon-vector.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      font-family: , sans-serif;
+    }
+
+    form {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      margin: 50px auto;
+      max-width: 500px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 4px;
+      margin-bottom: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    h3 {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <form>
+    <h3>DATOS</h3>
+
+    <label for="nombre">NOMBRE:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="apellido">APELLIDO:</label>
+    <input type="text" id="apellido" name="apellido" required>
+    
+    <label for="email">CORREO ELECTRÓNICO:</label>
+    <input type="email" id="email" name="email" required>
+       
+    <label>DOMICILIO</label>
+    <input type="text" id="domicilio" name="domicilio" required>
+
+    <label for="calle">CALLE:</label>
+    <input type="text" id="calle" name="calle" required>
+
+    <label for="no_interior">NO INTERIOR:</label>
+    <input type="text" id="no_interior" name="no_interior" required>
+
+    <label for="colonia">COLONIA:</label>
+    <input type="text" id="colonia" name="colonia" required>
+
+    <label for="cp">C.P:</label>
+    <input type="text" id="cp" name="cp" required>
+    
+    <label for="asusnto">ASUNTO:</label>
+    <input type="text" id="asunto" name="asunto" required>
+
+    <label for="mensaje">MENSAJE:</label>
+    <textarea id="mensaje" name="mensaje" rows="4" cols="30"></textarea>
+
+    <button type="submit">ENVIAR</button>
+  </form>
+
+</body>
+</html>
